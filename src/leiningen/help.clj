@@ -1,6 +1,6 @@
 (ns leiningen.help
   "Display a list of tasks or help for a given task."
-  (:use [leiningen.util.ns :only [namespaces-matching]])
+  (:use [leiningen.core.ns :only [namespaces-matching]])
   (:require [clojure.string :as string]
             [clojure.java.io :as io]))
 
@@ -82,12 +82,13 @@
          (binding [*out* *err*]
            (str task-ns "  Problem loading: " (.getMessage e))))))
 
-(defn help
+(defn ^{:no-project-needed true}
+  help
   "Display a list of tasks or help for a given task.
 
 Also provides readme, tutorial, news, sample, deploying and copying documentation."
-  ([task] (println (or (static-help task) (help-for task))))
-  ([]
+  ([project task] (println (or (static-help task) (help-for task))))
+  ([project]
      (println "Leiningen is a tool for working with Clojure projects.\n")
      (println "Several tasks are available:")
      (doseq [task-ns tasks]
