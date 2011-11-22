@@ -31,7 +31,7 @@ See also https://github.com/technomancy/leiningen/issues
    - [ ] compile
    - [ ] deploy
    - [ ] deps (mostly done in leiningen.core.classpath)
-   - [ ] help
+   - [X] help
    - [ ] install
    - [ ] jar
    - [ ] javac (can we do this without ant?)
