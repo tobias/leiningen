@@ -205,7 +205,7 @@ sub   2048R/6453D146 2013-03-12 [expires: 2014-03-12]
 Leiningen uses gpg for two things: decrypting credential files, and
 signing release artifacts. We'll focus on artifact singing here; for
 information on credentials encrypting/decrypting, see
-[DEPLOY](/DEPLOY.md).
+[DEPLOY](./DEPLOY.md).
 
 ### Signing a file
 
