@@ -19,9 +19,10 @@ only been tested under v1.x.
 
 ## What is it?
 
-GPG (or Gnu Privacy Guard) is a set of tools for cryptographic key
-creation/management and encryption/signing of data. If you are
-unfamiliar with the concepts of public key cryptography, this
+GPG(http://www.gnupg.org/) (or Gnu Privacy Guard) is a set of tools
+for cryptographic key creation/management and encryption/signing of
+data. If you are unfamiliar with the concepts of public key
+cryptography, this
 [Wikipedia entry](http://en.wikipedia.org/wiki/Public-key_cryptography)
 serves as a good introduction.
 
